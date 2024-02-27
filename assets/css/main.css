@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Poppins&display=swap") * {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.container {
+    width: calc(100% - 120px);
+    margin: auto;
+    /* for putting the content in the middle */
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.active {
+    font-weight: 700;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header {
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 9;
+    box-shadow: 0px 1.64744px 8.2372px 0px rgba(0, 0, 0, 10);
+    padding: 20px 0px;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+header .logo img {
+    width: 30px;
+}
+
+header .logo a {
+    color: #545be8;
+}
+
+header nav ul {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+header nav ul li a {
+    color: #101928;
+}
+
+header .auth {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+header .auth a {
+    /* padding: 13px 49px 13px 49px; */
+    padding: 5.354px 30px;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+}
+
+header .auth .login {
+    color: #545be8;
+    border: 2px solid #545be8;
+}
+
+header .auth .reg {
+    background-color: #545be8;
+    color: white;
+}
+
+.begin {
+    padding-bottom: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 140px;
+}
+
+.begin .row {
+    gap: 40px;
+}
+
+.begin .beginleft {
+    width: calc( (100% - 40px) / 2);
+}
+
+.begin .beginleft .firstspan {
+    color: #545BE8;
+    font-size: 20px;
+    font-family: inter;
+    font-weight: 400;
+}
+
+.begin .beginleft h2 {
+    font-size: 50px;
+}
+
+.begin .beginleft p {
+    color: #969696;
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.begin .beginleft .buttons {
+    display: flex;
+}
+
+.begin .beginleft .regi {
+    background-color: #545be8;
+    color: white;
+    border: 2px solid #545be8;
+    width: fit-content;
+}
+
+.buttons a {
+    padding: 5.354px 30px;
+    border-radius: 10px;
+    font-family: "Inter", sans-serif;
+    display: flex;
+    font-size: 15px;
+    align-items: center;
+}
+
+.buttons .play {
+    font-weight: bold;
+    color: black;
+}
+
+.buttons .play img {
+    padding-right: 5px;
+    width: 20px;
+}
+
+.begin .beginright {
+    width: calc( (100% - 40px) / 2);
+}
+
+.begin .beginright img {
+    padding-left: 70px;
+    height: 300px;
+}
+
+.selected {
+    background-color: #545BE8;
+}
+
+.selected .row {
+    gap: 40px;
+    padding: 40px;
+}
+
+.selectedright {
+    display: flex;
+    flex-direction: column;
+    width: calc( (100% - 40px) / 2);
+}
+
+.selectedleft {
+    width: calc( (100% - 40px) / 2);
+}
+
+.selectedleft img {
+    background-color: #F0C932;
+    border-radius: 50%;
+    height: 400px;
+}
+
+.selectedright span {
+    color: #F0C932;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.selectedright h2 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 40px
+}
+
+.selectedright p {
+    color: #DDDDDD;
+    font-size: 15px;
+}
+
+.selectedright .numbers {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.selectedright .numbers .firstnum {
+    text-align: center;
+}
+
+.selectedright .numbers .secondnum {
+    text-align: center;
+}
+
+.selectedright .numbers .thirdnum {
+    text-align: center;
+}
+
+.numbers span {
+    color: #DDDDDD;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+.numbers h3 {
+    color: #F0C932;
+}
+
+.gave {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 0px;
+}
+
+.gave .row {
+    gap: 5px;
+    justify-content: space-around;
+}
+
+.gave .gaveleft {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: calc( (100% - 5px) / 3);
+}
+
+.gave .gaveleft span {
+    text-transform: uppercase;
+    color: #545BE8;
+    font-family: inter;
+}
+
+.gave .gaveleft h2 {
+    color: black;
+    text-transform: capitalize;
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.gave .gaveleft p {
+    color: #969696;
+    font-family: poppins;
+    font-size: 15px;
+}
+
+.gave .gaveright {
+    width: calc( (100% - 5px) / 2);
+    display: flex;
+    flex-direction: row;
+    padding-rigt: 30px;
+    gap: 10px;
+}
+
+.gave .gaveright img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.gave .gaveright .profileone,
+.profiletwo,
+.profilethree {
+    background-color: #545BE8;
+    border-radius: 10%;
+    position: relative;
+    padding: 5px 10px;
+}
+
+.gave .gaveright h3 {
+    color: white;
+    font-family: inter;
+    font-weight: 700;
+}
+
+.gave .gaveright p {
+    color: #DDDDDD;
+    font-family: poppins;
+    font-weight: 400;
+    font-size: 17px;
+}
+
+.course {
+    padding-top: 10px;
+}
+
+.courses .row {
+    align-items: center;
+    gap: 30px;
+}
+
+.courses .course-items {
+    display: flex;
+    width: calc( (100% - 30px) / 2);
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course {
+    width: calc( (100% - 30px) / 2);
+    box-shadow: 5px 5px 8.2372px 0px rgba(0, 0, 0, 10);
+}
+
+.course-card {
+    position: relative;
+}
+
+.course-subject .views {
+    color: #545be8;
+}
+
+.course-subject .row:last-of-type {
+    justify-content: flex-start;
+    color: #969696;
+}
+
+.course img {
+    width: 100%;
+    height: 100%;
+    filter: brightness(60%);
+    display: flex;
+}
+
+.course-info {
+    top: 0;
+    bottom: 0%;
+    left: 0;
+    right: 0%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    padding: 20px;
+}
+
+.course-info span:last-of-type {
+    align-self: flex-end;
+    color: white;
+}
+
+.course-info span:first-of-type {
+    background-color: #545BE8;
+    color: white;
+    align-self: flex-start;
+    padding: 10px;
+}
+
+.course-descreiption {
+    width: calc( (100% - 30px) / 2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.course-descreiption p:nth-child(1) {
+    color: #545BE8;
+    font-size: 25px;
+}
+
+.course-descreiption h2 {
+    font-size: 40px;
+}
+
+.course-descreiption p:last-of-type {
+    color: #969696;
+}
+
+.course-descreiption a {
+    background-color: #545BE8;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    font-family: inter;
+}
+
+.testis {
+    background-color: #fff;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.testis h2 {
+    margin-bottom: 30px;
+}
+
+.testis .row {
+    gap: 40px;
+}
+
+.testi {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 8.2372px 8.2372px 0px rgba(0, 0, 0, 10);
+    background-color: #fff;
+    padding: 0px;
+    /* when I put more than 0 pixles, they are not on the same side. why" */
+    width: calc( (100% - 40px) / 2);
+}
+
+.testi {
+    position: relative;
+}
+
+.testi ::after {
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-top: 30px solid #959191;
+    border-left: 30px solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.userinfo {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.userinfo h3 {
+    font-size: 14px;
+}
+
+.userinfo span {
+    font-size: 10px;
+    color: #969696;
+}
+
+.userinfo img {
+    border-radius: 50%;
+    display: flex;
+}
+
+.user-data {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.rating {
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+blockquote {
+    font-size: 15px;
+}
+
+footer {
+    background-color: #393E46;
+    padding: 50px;
+    color: white;
+}
+
+.footer .row {
+    gap: 40px;
+}
+
+footer a {
+    color: white;
+    font-size: 15px;
+}
+
+footer .logo img {
+    width: 35px;
+}
+
+.footer-left {
+    width: calc((100% - 40px) / 2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 30px
+}
+
+footer .logo {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+footer .icons {
+    gap: 30px;
+    /* why its not working? */
+}
+
+footer .icons img {
+    width: 20 px;
+    height: 20px;
+    border: 1px solid #fff;
+    padding: 10px;
+    gap: 30px;
+    /* why its not working? */
+}
+
+footer .footer-right {
+    width: calc((100% - 40px) / 2);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .footer-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer .footer-right .footer-item {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+footer .footer-right nav {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
